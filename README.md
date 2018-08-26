@@ -3,7 +3,7 @@ Windows process memory library written in C++
 
 Available functions:
 
-```
+```c++
 bool openProcessHandle(String processName, DWORD access = ACCESS_RIGHTS::FULL);
   
 bool openProcessHandle(DWORD processId, DWORD access = ACCESS_RIGHTS::FULL);
@@ -22,7 +22,7 @@ bool write(SIZE_T adress, T value)
 
 ```
 Access rights: 
-```
+```c++
 struct ACCESS_RIGHTS
 {
 	static constexpr DWORD FULL = PROCESS_ALL_ACCESS;
@@ -32,7 +32,7 @@ struct ACCESS_RIGHTS
 ```
 Example: 
 
-```
+```c++
 try
 	{
 		 std::cout << mem.openProcessHandle("TeamViewer.exe") << std::endl;
