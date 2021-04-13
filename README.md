@@ -35,9 +35,9 @@ Example:
 ```c++
 try
 	{
-		 std::cout << mem.openProcessHandle("TeamViewer.exe") << std::endl;
-		 std::cout << mem.getProcessId() << std::endl;
-		 std::cout << mem.getProcessHandle() << std::endl;
+		std::cout << mem.openProcessHandle("TeamViewer.exe") << std::endl;
+		std::cout << mem.getProcessId() << std::endl;
+		std::cout << mem.getProcessHandle() << std::endl;
      
 	} catch(const std::exception &e)
 	{
